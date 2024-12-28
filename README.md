@@ -1,8 +1,8 @@
-# Configuring WB-MIO-E (Wiren Board) via Modbus Registers
+# Configuring WirenBoard WB-MIO-E v1 Device via Modbus Registers
 
 ## Problem Statement
 
-When using **Wiren Board** devices—specifically the **WB-MIO-E v1** gateway—to interface with **WBIO** expansion modules such as **WBIO-DI-WD-14**, **WBIO-DO-R10R-4**, and others, you must ensure the **communication speed** on the WB-MIO-E is correctly set. By **default**, the WB-MIO-E v1 operates at **9600** baud. If you wish to run at **any other speed**, you **must** explicitly **change** the **Modbus register** responsible for speed (usually register 110).
+When using **WirenBoard** devices—specifically the **WB-MIO-E v1** gateway—to interface with **WBIO** expansion modules such as **WBIO-DI-WD-14**, **WBIO-DO-R10R-4**, and others, you must ensure the **communication speed** on the WB-MIO-E is correctly set. By **default**, the WB-MIO-E v1 operates at **9600** baud. If you wish to run at **any other speed**, you **must** explicitly **change** the **Modbus register** responsible for speed (usually register 110).
 
 Failing to match the correct speed leads to:
 
@@ -88,7 +88,7 @@ To address this, we provide a **Bash script** that:
 
 ## Conclusion
 
-By default, the **WB-MIO-E v1** runs at **9600** baud. If you require a **different** speed (e.g., 115200) to match your host or your **WBIO** modules' communication needs, you must **write** the new speed code into **Register 110**. Some devices also need a **reboot** via **Register 120**. This interactive script automates the entire process, ensuring you can easily manage the module’s speed, address, and reboot steps without manual confusion or conflicts with `wb-mqtt-serial`.
+By default, the WirenBoard **WB-MIO-E v1** runs at **9600** baud. If you require a **different** speed (e.g., 115200) to match your host or your **WBIO** modules' communication needs, you must **write** the new speed code into **Register 110**. Some devices also need a **reboot** via **Register 120**. This interactive script automates the entire process, ensuring you can easily manage the module’s speed, address, and reboot steps without manual confusion or conflicts with `wb-mqtt-serial`.
 
 ---
 
