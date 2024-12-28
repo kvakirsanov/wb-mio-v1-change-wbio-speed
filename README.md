@@ -69,7 +69,7 @@ To address this, we provide a **Bash script** that:
    - `SPEED_MAP`.  
 3. **Run** the script:
    ```bash
-   sudo ./wb_mio_config.sh
+   sudo ./wb-mio-change-speed.sh
    ```
 4. **Follow** prompts to:
    - Read current speed,  
