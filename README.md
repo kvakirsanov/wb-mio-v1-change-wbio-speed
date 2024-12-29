@@ -2,7 +2,8 @@
 
 ## Problem Statement
 
-When using **WirenBoard** devices—specifically the **WB-MIO-E v1** gateway—to interface with **WBIO** expansion modules such as **WBIO-DI-WD-14**, **WBIO-DO-R10R-4**, and others, you must ensure the **communication speed** on the WB-MIO-E is correctly set. By **default**, the WB-MIO-E v1 operates at **9600** baud. If you wish to run at **any other speed**, you **must** explicitly **change** the **Modbus register** responsible for speed (usually register 110).
+When using **WirenBoard** devices—specifically the **WB-MIO-E v1** gateway—to interface with **WBIO** expansion modules such as **WBIO-DI-WD-14**, **WBIO-DO-R10R-4**, and others, you must ensure the **communication speed** on the WB-MIO-E for **WBIO bus** is correctly set. By **default**, the WB-MIO-E v1 operates at **9600** baud. 
+If you wish to run at **any other speed**, you **must** explicitly **change** the **Modbus register** responsible for speed (usually register 110).
 
 Failing to match the correct speed leads to  **No communication** with attached WBIO modules.
 
