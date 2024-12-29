@@ -55,13 +55,13 @@ To address this, we provide a **Bash script** that:
 
 1. **Clone** the repository:
    ```bash
-   git clone https://github.com/your_org/wb-mio-e-config.git
-   cd wb-mio-e-config
+   git clone https://github.com/kvakirsanov/wb-mio-v1-change-wbio-speed.git
+   cd wb-mio-v1-change-wbio-speed
    ```
 2. **Edit** the script parameters:
-   - `IP_ADDRESS`, `TCP_PORT`,  
+   - `IP_ADDRESS`, `TCP_PORT`, `CURRENT_ADDR`
    - `DEV_PORT`,  
-   - `CURRENT_BAUD`, `CURRENT_PARITY`, `CURRENT_STOPBITS`, `CURRENT_ADDR`,  
+   - `CURRENT_BAUD`, `CURRENT_PARITY`, `CURRENT_STOPBITS`,
    - `SPEED_MAP`.  
 3. **Run** the script:
    ```bash
