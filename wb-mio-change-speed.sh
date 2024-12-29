@@ -21,19 +21,20 @@
 # PARAMETERS
 ######################################
 
-# Network parameters of WM-MIO-E device for socat
+# Parameters of WM-MIO-E device for socat
 IP_ADDRESS="10.10.100.7"
 TCP_PORT="20108"
-
-# Virtual serial port (PTY) that socat will create
-DEV_PORT="/dev/ttyRS485-6"
+CURRENT_ADDR=139           # Current Modbus address of WB-MIO-E device
 
 # Current device settings for connecting to WB-MIO
 CURRENT_BAUD=9600          # Current speed (e.g., 9600 or 115200)
 CURRENT_PARITY="none"      # Parity: none / odd / even
 CURRENT_STOPBITS=1         # Number of stop bits: 1 or 2
-CURRENT_ADDR=139           # Current Modbus address of WB-MIO-E device
 
+# Virtual serial port (PTY) that socat will create
+DEV_PORT="/dev/ttyRS485-6"
+
+######################################
 # WB-MIO Modbus registers
 REG_SPEED=110              # Register for speed (baud / 100)
 REG_ADDR=128               # Register for the device address
