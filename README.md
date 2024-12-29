@@ -48,7 +48,7 @@ To address this, we provide a **Bash script** that:
 
 ### Why This Script Matters
 
-- **Default Speed Caveat**: The **WB-MIO-E v1** ships with **9600 baud**. Changing it to a **different** speed **must** be done in the register.  
+- **Default Speed Caveat**: The **WB-MIO-E v1** ships with **9600 baud** for WBIO bus. Changing it to a **different** speed **must** be done in the register.  
 - **No Manual Switches**: You cannot switch speeds via hardware DIP settings; it must be done by Modbus write.  
 - **Ensures WBIO Compatibility**: By aligning the MIO-E speed with your host and your WBIO modules’ expected parameters, you enable stable polling and communication.
 
