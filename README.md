@@ -7,7 +7,7 @@ When using **WirenBoard** devices—specifically the **WB-MIO-E v1** gateway—t
 Failing to match the correct speed leads to  **No communication** with attached WBIO modules.
 
 Hence, the **problem** is:  
-1. The WB-MIO-E v1 speed defaults to 9600 but may need to be changed to a higher or lower baud rate (e.g., 115200).  
+1. The WB-MIO-E v1 WBIO bus speed defaults to 9600 but may need to be changed to a higher or lower baud rate (e.g., 115200).  
 2. The only way to do this is by **writing** to Modbus registers (e.g., register 110 for speed).  
 3. Some firmware revisions apply speed changes **only** after writing `1` to the reboot register (120).  
 
